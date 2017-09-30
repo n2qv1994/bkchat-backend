@@ -1,0 +1,33 @@
+resourcePath: /authenticate
+description: API Authentication
+apis:
+
+- path: /api/authenticate
+  operations:
+
+  - httpMethod: POST
+    summary: Authentication
+    notes: Authentication
+    nickname: Authentication
+    consumes:
+      - text/html
+    parameters:
+
+    - name: user
+      dataType: request
+      paramType: body
+      required: true
+
+models:
+  request:
+    id: request
+    properties:
+      user:
+        type: User
+  User:
+    id: User
+    properties:
+      user_name:
+        type: String
+      pass_word:
+        type: String

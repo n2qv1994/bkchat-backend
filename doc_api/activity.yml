@@ -1,0 +1,26 @@
+resourcePath: /Activities
+description: API Activities
+apis:
+
+- path: /api/get_activities/{user_id}/{offset}
+  operations:
+
+  - httpMethod: GET
+    summary: Get your meeting
+    notes: Returns list your meeting
+    nickname: get_meeting
+    consumes:
+      - text/html
+    parameters:
+
+    - name: user_id
+      dataType: string
+      paramType: path
+      required: true
+      description: Your user id
+
+    - name: offset
+      dataType: string
+      paramType: path
+      required: true
+      description: offset

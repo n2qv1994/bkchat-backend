@@ -1,0 +1,17 @@
+{
+	"development": {
+    "port": "6379",
+    "host": "127.0.0.1",
+    "auth": "44d5c1d6bbe5c857e8b03eeeee0cd0fe0a3027fe87fa43924cb1292a720de3ba"
+  },
+  "test": {
+    "port": "6379",
+    "host": "127.0.0.1",
+    "auth": "44d5c1d6bbe5c857e8b03eeeee0cd0fe0a3027fe87fa43924cb1292a720de3ba"
+  },
+  "production": {
+    "port": "6379",
+    "host": "127.0.0.1",
+    "auth": "44d5c1d6bbe5c857e8b03eeeee0cd0fe0a3027fe87fa43924cb1292a720de3ba"
+  }
+}

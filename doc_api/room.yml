@@ -1,0 +1,36 @@
+resourcePath: /room
+description: manage room in system
+apis:
+
+- path: /api/get_rooms
+  operations:
+
+  - httpMethod: GET
+    summary: Get all room in system
+    notes: Returns list room
+    nickname: get_rooms
+    consumes:
+      - text/html
+    parameters:
+
+- path: /api/get_rooms_in_week
+  operations:
+
+  - httpMethod: GET
+    summary: Get all room in week
+    notes: Returns list room in week
+    nickname: get_rooms_in_week
+    consumes:
+      - text/html
+    parameters:
+
+- path: /api/get_rooms_in_month
+  operations:
+
+  - httpMethod: GET
+    summary: Get all room in system
+    notes: Returns list room
+    nickname: get_rooms
+    consumes:
+      - text/html
+    parameters:

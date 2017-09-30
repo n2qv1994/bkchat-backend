@@ -1,0 +1,54 @@
+resourcePath: /my_meeting
+description: All about API
+apis:
+
+- path: /api/get_meeting/{user_code}
+  operations:
+
+  - httpMethod: GET
+    summary: Get your meeting
+    notes: Returns list your meeting
+    nickname: get_meeting
+    consumes:
+      - text/html
+    parameters:
+
+    - name: user_code
+      dataType: string
+      paramType: path
+      required: true
+      description: Your user code
+
+- path: /api/get_schedule/{user_code}
+  operations:
+
+  - httpMethod: GET
+    summary: Get your schedule
+    notes: Returns list your schedule
+    nickname: get_schedule
+    consumes:
+      - text/html
+    parameters:
+
+    - name: user_code
+      dataType: string
+      paramType: path
+      required: true
+      description: Your user code
+
+- path: /api/get_room/{room_code}
+  operations:
+
+  - httpMethod: GET
+    summary: Get Room Information
+    notes: Returns Room Information
+    nickname: get_room
+    consumes:
+      - text/html
+    parameters:
+
+    - name: room_code
+      dataType: string
+      paramType: path
+      required: true
+      description: room code

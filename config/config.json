@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "video_conference_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "//": "set timezone when connect to db server: vietnam UTC +07:00",
+    "timezone": "+07:00",
+    "zone": "Asia/Ho_Chi_Minh"
+  },
+  "test": {
+    "username": "test",
+    "password": "",
+    "database": "video_conference_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "timezone": "+07:00",
+    "zone": "Asia/Ho_Chi_Minh"
+  },
+  "production": {
+    "username": "product",
+    "password": "",
+    "database": "video_conference_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "timezone": "+07:00",
+    "zone": "Asia/Ho_Chi_Minh"
+  }
+}

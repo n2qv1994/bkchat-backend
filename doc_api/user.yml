@@ -1,0 +1,115 @@
+resourcePath: /Users
+description: Manage account of user
+apis:
+
+- path: /api/users
+  operations:
+
+  - httpMethod: GET
+    summary: Get all user in system
+    responseClass: User
+    notes: Returns list user in system
+    nickname: users
+    consumes:
+      - text/html
+    parameters:
+
+- path: /api/create_user
+  operations:
+
+  - httpMethod: POST
+    summary: create an account for user
+    notes: Returns status of action
+    nickname: create_user
+    consumes:
+      - text/html
+    parameters:
+
+    - name: first_name
+      dataType: request
+      paramType: body
+      required: true
+      description:
+    
+    - name: last_name
+      dataType: request
+      paramType: body
+      required: true
+      description:
+
+    - name: email
+      dataType: request
+      paramType: body
+      required: true
+      description:
+
+    - name: address
+      dataType: request
+      paramType: body
+      required: true
+      description:
+
+    - name: phone
+      dataType: request
+      paramType: body
+      required: true
+      description:
+
+    - name: user_name
+      dataType: request
+      paramType: body
+      required: true
+      description:
+
+    - name: pass_word
+      dataType: request
+      paramType: body
+      required: true
+      description:
+
+  - path: /api/delete_user
+  operations:
+
+  - httpMethod: POST
+    summary: delete an account
+    notes: Returns status of action
+    nickname: delete_user
+    consumes:
+      - text/html
+    parameters:
+
+    - name: user_name
+      dataType: request
+      paramType: body
+      required: true
+      description: your username
+
+
+models:
+    User:
+      id: User
+      properties:
+        first_name:
+          type: String
+        last_name:
+          type: String
+        email:
+          type: String
+        image:
+          type: String
+        address:
+          type: String
+        phone:
+          type: String
+        user_name:
+          type: String
+        enabled:
+          type: Integer
+        status:
+          type: Integer
+        role_id:
+          type: String
+        created_at:
+          type: String
+        updated_at:
+          type: String
